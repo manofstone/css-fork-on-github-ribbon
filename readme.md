@@ -7,7 +7,7 @@ by James Stone. Forked from the excellent css-fork-on-github-ribbon by Christian
 * Sass/Scss
 * Go crazy, BSD License
 
-1. Add the following HTML
+### 1. Add the following HTML
 
 ``` html
 <div class="row">
@@ -15,7 +15,7 @@ by James Stone. Forked from the excellent css-fork-on-github-ribbon by Christian
 </div>
 ```
 
-2. Add the following to your sass/app.scss
+### 2. Add the following to your sass/app.scss
 
 ``` css
 // A modification and refactoring of the excellent 
@@ -74,5 +74,5 @@ $forkingithub-offset: 60px;
 }
 ```
 
-3. Compile with Compass, enjoy.
+###  3. Compile with Compass, enjoy.
 
