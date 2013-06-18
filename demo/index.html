@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+
+  
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  
+
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="small-12 columns" id="forkongithub"><a class="button expand" href="https://github.com/manofstone/foundation4-fork-on-github-ribbon">Fork me on GitHub</a></div>
+</div>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Zurb Foundation 4, <small>Responsive "Fork me on Github" Ribbon</small></h2>
+			<p>by James Stone. Forked from the excellent <a href="https://github.com/codepo8/css-fork-on-github-ribbon">css-fork-on-github-ribbon</a> by Christian Heilmann.
+      </p>
+			<hr />
+		</div>
+	</div>
+
+  <div class="row">
+    <div class="large-8 columns panel">
+      <h5>1. Add the following HTML</h5>
+<code><pre>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;small-12 columns&quot; id=&quot;forkongithub&quot;&gt;&lt;a class=&quot;button expand&quot; href=&quot;https://github.com/manofstone/foundation4-fork-on-github-ribbon&quot;&gt;Fork me on GitHub&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</pre></code>
+
+      <h5>2. Add the following to your sass/app.scss</h5>
+
+
+
+<code><pre>// A modification and refactoring of the excellent 
+// responsive css-fork-on-github-ribbon by Christian Heilmann
+// specificly for use with Zurb Foundation 4 and Sass/Scss
+
+// https://github.com/manofstone
+
+// Software License Agreement (BSD License)
+// Copyright (c) 2013, Christian Heilmann.
+// All rights reserved.
+
+// https://github.com/codepo8/css-fork-on-github-ribbon
+
+$forkingithub-width: 300px;
+$forkingithub-offset: 60px;
+
+@media #{$small} {
+
+  #forkongithub {
+    position:absolute;
+    display:block;
+    top:0;
+    right:0;
+    width: emCalc($forkingithub-width);
+    overflow:hidden;
+    height:emCalc($forkingithub-width);
+    z-index:1000;
+  }
+
+  #forkongithub a {
+    width:emCalc($forkingithub-width);
+    position:absolute;
+    top:emCalc($forkingithub-offset);
+    right:emCalc(-$forkingithub-offset);
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+  }
+
+  #forkongithub a::before, #forkongithub a::after { 
+    content:&quot;&quot;;
+    width:100%;
+    display:block;
+    position:absolute;
+    top:1px;
+    left:0;
+    height:1px;
+    background:#fff;
+  }
+
+  #forkongithub a::after {
+    bottom:1px;
+    top:auto;
+  }
+}</pre></code>
+
+
+      <h5>3. Compile with Compass, enjoy.</h5>
+
+
+    </div>
+    <div class="large-4 columns">
+      <ul class="no-bullets">
+        <li>Lightweight (37 lines of Scss)</li>
+        <li>Foundation 4, Resposive for Mobile</li>
+        <li>Sass/Scss</li>
+        <li>Go crazy, BSD License</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+	
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/foundation.interchange.js"></script>
+	
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+	
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
