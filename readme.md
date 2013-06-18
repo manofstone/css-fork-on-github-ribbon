@@ -16,7 +16,7 @@ by James Stone. Forked from the excellent css-fork-on-github-ribbon by Christian
 ```
 
 2. Add the following to your sass/app.scss
-``` scss
+``` css
 // A modification and refactoring of the excellent 
 // responsive css-fork-on-github-ribbon by Christian Heilmann
 // specificly for use with Zurb Foundation 4 and Sass/Scss
