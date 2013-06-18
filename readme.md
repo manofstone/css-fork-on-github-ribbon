@@ -16,6 +16,7 @@ by James Stone. Forked from the excellent css-fork-on-github-ribbon by Christian
 ```
 
 2. Add the following to your sass/app.scss
+
 ``` css
 // A modification and refactoring of the excellent 
 // responsive css-fork-on-github-ribbon by Christian Heilmann
